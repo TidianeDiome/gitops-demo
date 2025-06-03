@@ -20,5 +20,6 @@ jobs:
         uses: actions/setup-java@v4
         with:
           java-version: '17'
+          distribution: 'adopt'
       - name: Build Docker image
         run: ./mvnw spring-boot:build-image -DskipTests
